@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		readme.md = readme.md
 	EndProjectSection
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsNancy", "FsNancy\FsNancy.fsproj", "{6B494685-2420-46A8-BFBF-D194A04B3220}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{8655BB81-FC55-4CD7-A99F-4EA49ED994EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8655BB81-FC55-4CD7-A99F-4EA49ED994EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8655BB81-FC55-4CD7-A99F-4EA49ED994EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B494685-2420-46A8-BFBF-D194A04B3220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B494685-2420-46A8-BFBF-D194A04B3220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B494685-2420-46A8-BFBF-D194A04B3220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B494685-2420-46A8-BFBF-D194A04B3220}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

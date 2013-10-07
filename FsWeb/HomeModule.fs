@@ -1,9 +1,14 @@
-namespace FsWeb
+module HomeModule
 
-open Nancy
+open FsNancy
 
-type HomeModule() as self =
-    inherit NancyModule()
+let routeConfig = [
+    Get ("/",
+        fun _ -> "Hello F# Web App");
+    Get ("/hi/{name}",
+        fun parameters -> "Hello " + parameters?name)
+]
 
-    do
-        self.Get.["/"] <- (fun x -> "Hello F# Web App" :> obj)
+type HomeModule() =
+    inherit FsNancyModule(routeConfig)
+

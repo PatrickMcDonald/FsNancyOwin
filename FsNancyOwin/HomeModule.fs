@@ -1,11 +1,13 @@
-﻿namespace FsNancyOwin
+﻿module FsNancyOwin.HomeModule
 
-open Nancy
+open FsNancy
 
-type HomeModule() as self =
-    inherit FsNancyModule()
+let routeConfig = [
+    Get ("/",
+        fun _ -> "Hello F# World!");
+    Get ("/hi/{name}",
+        fun args -> "Hello " + args?name)
+]
 
-    do
-        let Get = self.Get
-        Get "/" (fun _ -> 
-            "Hello, F# World!")
+type HomeModule() =
+    inherit FsNancyModule(routeConfig)
